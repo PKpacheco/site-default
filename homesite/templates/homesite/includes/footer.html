@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<footer>
+    <div id="inner-footer">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-4">
+                <div class="footerlogo"></div>
+            </div>
+            <div class="col-xs-6 col-sm-5 col-md-4">
+                <nav>
+                    <a href="{% url 'website:generic_page' 'quem-somos' %}">Quem Somos</a>
+                    <a href="{% url 'website:generic_page' 'faq' %}">Faq</a>
+                    <a href="{% url 'website:generic_page' 'termos-de-uso' %}">Termos de Uso</a>
+                    <a href="{% url 'website:generic_page' 'contato' %}">Contato</a>
+                </nav>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="social">
+                    <li><a href="{{ social_app.facebook }}" class="facebook"><span class="icon-facebook"></span></a></li>
+                    <li><a href="{{ social_app.pinterest }}" class="c"><span class="icon-pinterest"></span></a></li>
+                    <li><a href="{{ social_app.instagram }}" class="instagram"><span class="icon-instagram"></span></a></li>
+                    <li><a href="{{ social_app.twitter }}" class="twitter"><span class="icon-twitter"></span></a></li>
+                    <li><a href="{{ social_app.linkedin }}" class="linkedin"><span class="icon-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.0/validator.min.js"></script>
+<script type="text/javascript" src="{% static 'js/lib/jquery-ui-1.10.4.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lib/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lib/jquery.mousewheel-3.0.6.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lib/jquery.mousewheel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lib/owl.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/lib/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/init.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>

@@ -14,15 +14,11 @@ class Contact(TimeStampedModel):
     city = models.CharField(max_length=30, verbose_name="Cidade")
     state = models.CharField(max_length=255, verbose_name="Estado")
     photo = models.ImageField(upload_to='providers/', verbose_name='Foto do fornecedor', blank=True, null=True)
-    logo = models.ImageField(upload_to='providers/logos/', verbose_name='Logo do fornecedor', blank=True, null=True)
 
     email = models.EmailField(verbose_name="Email", blank=True, null=True)
     site = models.URLField(max_length=255, verbose_name="Site", blank=True, null=True)
     facebook = models.URLField(max_length=255, verbose_name="Facebook", blank=True, null=True)
     instagram = models.URLField(max_length=255, verbose_name="Instagram", blank=True, null=True)
-    pinterest = models.URLField(max_length=255, verbose_name="Pinterest", blank=True, null=True)
-    gogudi = models.URLField(max_length=255, verbose_name="Gogudi", blank=True, null=True)
-    slug = models.SlugField(max_length=250, verbose_name="Página Interna", blank=True, null=True)
     content = models.TextField(verbose_name="Conteudo", blank=True, null=True)
 
     def __str__(self):

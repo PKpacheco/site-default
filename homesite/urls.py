@@ -1,6 +1,5 @@
 from django.conf.urls import url
+from .views import HomeSiteView
 
 urlpatterns = [
-    # url(r'^fornecedores/$', AllProviders.as_view(), name='all_providers'),
-
-]
+    url(r'^$', HomeSiteView.as_view(), name='home'), ]

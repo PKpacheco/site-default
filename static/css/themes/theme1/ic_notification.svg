@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="29px" height="27px" viewBox="0 0 29 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-logado" transform="translate(-728.000000, -32.000000)" fill="#F2A869">
+            <g id="Menu">
+                <path d="M740.55754,52.7226455 C736.97803,52.3034326 738.336974,53.1712807 737.267386,56.6576918 C736.803386,58.1704589 737.577429,58.7449087 735.954567,58.0345614 C729.257841,55.1036717 725.680606,43.7345149 729.670665,37.8063816 C731.724547,34.7551289 734.808782,32.9152215 738.30641,32.3643294 C761.949939,28.6418218 761.002037,54.7034905 744.077978,52.7226453 L740.414995,52.7226456" id="ic_notification"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'homesite',
     'contacts',
     'core',
+    'contents',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -137,3 +138,24 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
 BROKER_URL = 'amqp://myuser:mypassword@localhost:5672/myhost'
 
 SITE_ID = 1
+
+
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'Site-Default ',
+    'SEARCH_URL': '',
+
+    #'MENU_ORDER': (
+    #     ('campaigns',('campaigns.banner','campaigns.question','campaigns.repliedin')),
+    #     ('categories',),
+    #     ('people',('people.person','people.contact'))
+    # ),
+
+    'MENU': (
+
+        # {'app': 'portfolio_categories', 'models': ('person', 'question','repliedin')},
+        {'app': 'contacts', 'label': 'Contatos'},
+        {'app': 'products', 'label': 'Produtos'},
+        {'app': 'contents', 'label': 'Conteudo'},
+
+    ),
+}

@@ -9,7 +9,7 @@ class ContactForm(ModelForm):
     class Meta:
         model = Contact
         fields = ('name', 'phone', 'phone2', 'state', 'city', 'photo',
-                  'email', 'site', 'facebook', 'instagram', 'pinterest', 'slug', 'content')
+                  'email', 'site', 'facebook', 'instagram', 'content')
 
         widgets = {
             'site': forms.TextInput(attrs={'placeholder': 'ex: http://www.abc.com.br '}),

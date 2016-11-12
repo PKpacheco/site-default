@@ -1,0 +1,42 @@
+<div id="container" class="home">
+    <!-- mainmenu -->
+    <header class="main hidden-xs" role="heading">
+        <div class="inner-header">
+            <a href="/" class="logo" role="logo"></a>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="javascript:;" onClick="$('#modalLogin').modal()" >Crie</a></li>
+                    <li><a href="{% url 'providers:list_providers' %}">Encontre</a></li>
+                </ul>
+                {% if not request.user.is_authenticated %}
+                    <a href="javascript:;" class="button login" onClick="$('#modalLogin').modal()" >Entre</a>
+                {% else %}
+                    <a href="{% url 'dashboard:configuracoes' %}" class="button login" >Dashboard</a>
+                {% endif %}
+
+            </nav>
+        </div>
+    </header>
+
+    <header class="main mobile visible-xs-block" role="heading">
+        <div class="inner-header">
+            <div class="wrap">
+                <a href="javascript:;" class="mobile-menu-button">
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <a href="/" class="logo" role="logo"></a>
+                <a href="javascript:;" class="button login" role="button" data-toggle="modal" data-target="#modalLogin">Entre</a>
+            </div>
+            <nav role="navigation">
+                    <li><a href="{% url 'website:register' %}">Crie</a></li>
+                    <li><a href="{% url 'providers:list_providers' %}">Encontre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>

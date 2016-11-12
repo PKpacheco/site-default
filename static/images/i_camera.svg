@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="29px" viewBox="0 0 34 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_camera</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M109.091782,169.047084 C108.599179,169.047084 108.197562,168.65281 108.197562,168.166413 C108.197562,167.681274 108.599179,167.287 109.091782,167.287 C109.585661,167.287 109.986001,167.681274 109.986001,168.166413 C109.986001,168.65281 109.585661,169.047084 109.091782,169.047084 M99.7700005,178.607122 C96.2432456,178.607122 93.3850002,175.792183 93.3850002,172.318864 C93.3850002,168.846802 96.2432456,166.030606 99.7700005,166.030606 C103.295478,166.030606 106.155001,168.846802 106.155001,172.318864 C106.155001,175.792183 103.295478,178.607122 99.7700005,178.607122 M109.986001,164.772955 L106.920562,164.772955 C106.499152,164.772955 106.045179,164.45131 105.913009,164.057037 L105.119992,161.715918 C104.986546,161.321644 104.533849,161 104.112439,161 L95.4275618,161 C95.0061518,161 94.5521783,161.321644 94.4200088,161.715918 L93.6269917,164.057037 C93.4935452,164.45131 93.0408487,164.772955 92.6194387,164.772955 L89.5540001,164.772955 C88.1499385,164.772955 87,165.90547 87,167.288258 L87,178.607122 C87,179.98991 88.1499385,181.122425 89.5540001,181.122425 L109.986001,181.122425 C111.390062,181.122425 112.540001,179.98991 112.540001,178.607122 L112.540001,167.288258 C112.540001,165.90547 111.390062,164.772955 109.986001,164.772955 M99.7700005,168.545909 C97.6536921,168.545909 95.9390003,170.235879 95.9390003,172.318864 C95.9390003,174.403107 97.6536921,176.091819 99.7700005,176.091819 C101.885032,176.091819 103.601001,174.403107 103.601001,172.318864 C103.601001,170.235879 101.885032,168.545909 99.7700005,168.545909" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="home-logada-tema1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-logada-1o-acesso" transform="translate(-495.000000, -294.000000)">
+            <g id="perfil" transform="translate(0.000000, 89.000000)">
+                <g id="foto-perfil" transform="translate(412.000000, 46.000000)">
+                    <g id="ic_camera">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill-opacity="0.800000012" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
