@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '35u4e4mbfsmqbgrq3(q-zic%1i2st&x)sbl5nk0e@(4qwx0y4n'
+# SECRET_KEY = '35u4e4mbfsmqbgrq3(q-zic%1i2st&x)sbl5nk0e@(4qwx0y4n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,11 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework',
-    'api',
-    'categories',
+    'products',
     'homesite',
-    'people',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -132,7 +129,7 @@ PROJECT_DIR = os.path.join(BASE_DIR, 'default')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_collected')
 
-AUTH_USER_MODEL = 'people.Person'
+# AUTH_USER_MODEL = 'people.Person'
 
 
 BROKER_URL = 'amqp://myuser:mypassword@localhost:5672/myhost'
