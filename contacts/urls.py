@@ -1,6 +1,9 @@
-from django.conf.urls import url
+from django.conf.urls import include, url
+
+from .views import list_contact
 
 urlpatterns = [
-    # url(r'^fornecedores/$', AllProviders.as_view(), name='all_providers'),
+
+    url(r'^contato/', list_contact, name='list_contact'),
 
 ]

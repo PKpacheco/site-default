@@ -15,10 +15,15 @@ app={
 				app.formvalidator.init();
 
 			//smooth scroll anchor nav
-			$('a[href^="#"]').on('click', function(e){
-				e.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top-$("nav.pagenav").height()}, 'slow', 'easeOutCubic');
+			$('a[href*="#"]').on('click', function(e){
+				if(window.location.pathname==this.pathname) {
+					e.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top-$("nav.pagenav").height()}, 'slow', 'easeOutCubic');
+				}
 			});
+
+			if($(".number-with-incbuttons").length>0)
+				setupNumberWithIncButtons();
 
 		}
 	},
@@ -54,20 +59,38 @@ app={
 				afterInit:function(){$(this.$elem[0]).css('visibility','visible')}
 			});
 
-			$(".editpanelink").unbind().click(function(e){
+			$(".eventos-slider ul").owlCarousel({
+				navigation:true,
+				navigationText:['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+				rewindNav:false,
+				scrollPerPage:true,
+				slideSpeed:1000,
+				items:1,
+				// loop:false,
+				// afterInit:function(){$(this.$elem[0]).css('visibility','visible')}
+			});
+
+			// TROCA PAINEL DE VIEW PRA EDIT
+			$(".editpanelink,.meuseventos .button.add").unbind().click(function(e){
 				e.preventDefault();
 				$s=$(this).closest("section");
-				$s.load("parts/"+$s.data("form"),function() {
-					$(this).children(':first').unwrap();
-					app.main.init()
+				$s.fadeOut('slow',function(){
+					$s.load("parts/"+$s.data("form"),function() {
+						$(this).children(':first').unwrap().hide().fadeIn('slow');
+						app.main.init()
+					})
 				})
 			})
+
+			//TROCA PAINEL DE EDIT PRA VIEW
 			$(".cancelpanellink,button.cancel").unbind().click(function(e){
 				e.preventDefault();
 				$s=$(this).closest("section");
-				$s.load("parts/"+$s.data("view"),function() {
-					$(this).children(':first').unwrap();
-					app.main.init()
+				$s.fadeOut('slow',function(){
+					$s.load("parts/"+$s.data("view"),function() {
+						$(this).children(':first').unwrap().hide().fadeIn('slow');
+						app.main.init()
+					})
 				})
 			})
 
@@ -120,4 +143,15 @@ function updateStickyNav(){
 		$("nav.pagenav").addClass("sticky");
 	else
 		$("nav.pagenav").removeClass("sticky");
+}
+
+function setupNumberWithIncButtons(){
+	$o=$(".number-with-incbuttons");
+	$i=$o.find("input");
+	$o.find(".dec").click(function(){
+		$i.val(Math.max(1,Number($i.val())-1));
+	});
+	$o.find(".inc").click(function(){
+		$i.val(Number($i.val())+1);
+	});
 }

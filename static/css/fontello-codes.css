@@ -18,7 +18,9 @@
 .icon-gift:before { content: '\e810'; } /* '' */
 .icon-notification:before { content: '\e811'; } /* '' */
 .icon-location:before { content: '\e812'; } /* '' */
+.icon-download:before { content: '\e813'; } /* '' */
 .icon-cancel:before { content: '\e814'; } /* '' */
+.icon-email:before { content: '\e815'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
@@ -27,5 +29,3 @@
 .icon-pinterest:before { content: '\f231'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-instagram:before { content: '\f31e'; } /* '' */
-.icon-linkedin:before { content: '\f08c'; } /* '' */
-.icon-globe:before { content: '\f0ac'; } /* '' */

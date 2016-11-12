@@ -8,7 +8,6 @@ from django.contrib.auth.decorators import login_required
 from contents.models import Content
 
 
-class HomeSiteView(View):
-    model = Content
-    context_object_name = 'contents'
+class HomeSiteView(TemplateView):
+
     template_name = 'homesite/index.html'

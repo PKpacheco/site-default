@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="26px" viewBox="0 0 20 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>i_eventlocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="19.992 25.9503178 19.992 0 0 0 0 12.9751589 0 25.9503178 19.992 25.9503178"></polygon>
+    </defs>
+    <g id="home-logada-tema1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-logada-1o-acesso" transform="translate(-529.000000, -2952.000000)">
+            <g id="eventos" transform="translate(0.000000, 2457.000000)">
+                <g id="convite" transform="translate(122.000000, 92.000000)">
+                    <g id="i_eventlocation" transform="translate(407.000000, 403.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M10,14.6966512 C7.0926,14.6966512 4.7359,12.3212791 4.7359,9.39174419 C4.7359,6.4618062 7.0926,4.08683721 10,4.08683721 C12.9074,4.08683721 15.2641,6.4618062 15.2641,9.39174419 C15.2641,12.3212791 12.9074,14.6966512 10,14.6966512 M0,10.0775194 C0,15.6433333 6.8148,25.9503178 10,25.9503178 C13.1852,25.9503178 20,15.6433333 20,10.0775194 C20,4.51160465 15.523,0 10,0 C4.4773,0 0,4.51160465 0,10.0775194 Z" id="Fill-1" fill="#F2A869" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
